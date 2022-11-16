@@ -4,7 +4,10 @@ const app = Vue.createApp({
             product: 'Socks',
             image: './assets/images/socks_blue.jpg',
             // inStock: false
-            inventory: 0
+            inventory: 10,
+            
+            // My code challenge solution
+            onSale: true
         }
     }
 })
