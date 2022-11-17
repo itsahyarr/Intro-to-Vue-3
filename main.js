@@ -37,10 +37,10 @@ const app = Vue.createApp({
 
         // my code challenge solution
         forSale() {
-            if (this.inStock == true)
-            return this.brand + ' ' + this.product
+            if (this.onSale == true)
+                return `${this.brand} ${this.product} is on sale.`
             else
-            return ''
+                return ''
         }
     }
 })
