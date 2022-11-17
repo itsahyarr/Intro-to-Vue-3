@@ -22,7 +22,8 @@ const app = Vue.createApp({
 
         // My code challenge solution
         removeFromCart() {
-            this.cart -= 1
+            if (this.cart >= 1)
+                this.cart -= 1
         }
         // -------------------------->
     }
