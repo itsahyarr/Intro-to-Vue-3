@@ -6,7 +6,8 @@ const app = Vue.createApp({
             brand: 'Vue Mastery',
             selectedVariant: 0,
             // image: './assets/images/socks_blue.jpg',
-            // inStock: false,
+            inStock: false,
+            onSale: false,
             details: ['50% cotton', '30% wool', '20% polyester'],
             variants: [
               { id: 2234, color: 'green', image: './assets/images/socks_green.jpg', quantity: 50 },
@@ -33,5 +34,13 @@ const app = Vue.createApp({
         inStock() {
             return this.variants[this.selectedVariant].quantity
         },
+
+        // my code challenge solution
+        forSale() {
+            if (this.inStock == true)
+            return this.brand + ' ' + this.product
+            else
+            return ''
+        }
     }
 })
