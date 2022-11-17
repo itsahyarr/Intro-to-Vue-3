@@ -12,6 +12,7 @@ const app = Vue.createApp({
 
             // My code challenge solution
             sizes: ['S', 'M', 'L', 'XL']
+            // -------------------------->
         }
     }
 })
